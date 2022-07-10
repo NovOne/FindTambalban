@@ -49,8 +49,6 @@ class _ContentState extends State<Content> {
   double? lonn;
   double distance = 0.0;
   GoogleMapController? mapController;
-  // _center = LatLng(0.0,0.0);
-  // Future<double>? latitude;
   final List<Marker> _markers = <Marker>[];
   // String? _currentAddress;
   String? addressformated;
@@ -62,8 +60,7 @@ class _ContentState extends State<Content> {
 
   @override
   void initState () {
-    // debugPrint('ICON MARKER: ' + iconMarker.toString());
-    markerIcon();
+    markerIcon(); // Add marker for only current location
     getLocation();
     // getMarker();
     
@@ -256,34 +253,105 @@ class _ContentState extends State<Content> {
     );
   }
 
-  Future<String> getLocation() async { // mendapatkan semua titik lokasi, jarak ke current lokasi dan buat marker yg memenuhi syarat
-    List<double> listDistance = [];
-    int nummarkers = 0;
-    List<LatLng> latlngmarker = [];
+  // List<double> datas = [8, 0.7, 9.8, 7.0]; 
 
+  Future <List<double>> bubbleSort(datas) async {
+    int n = datas.length;
+    double dummy;
+    List<LatLng> destiLoc = [];
     response = await rootBundle.loadString('assets/daftar.json');
     data = await json.decode(response!.toString());
 
-    final Uint8List iconMarker2 = await getBytesFromAsset('assets/marker-motorcycle.png', 75);
-    // debugPrint('DATA: ' + data.toString());
-    for (var i=0; i<data['results'].length; i++) {
-      listDistance.add(getDistance(LatLng(latt!.toDouble(),lonn!.toDouble()), LatLng(data['results'][i]['lat'], data['results'][i]['lon'])));
+
+    for (var i = 0; i<n; i++) {
+      for (var j = n-1; j>i; j--) {
+        if (datas[j] < datas[j-1]) { 
+          dummy = datas[j];
+          datas[j] = datas[j-1];
+          datas[j-1] = dummy;
+          destiLoc.insert(j-1,LatLng(data['results'][j-1]['lat'], data['results'][j-1]['lon']));
+        }
+      }
+      // kode di sini
     }
-    // listDistance.sort();
+    debugPrint(datas);
+
+    return datas;
+  }
+
+  Future<String> getLocation() async { // mendapatkan semua titik lokasi, jarak ke current lokasi dan buat marker yg memenuhi syarat
+    List<double> listDistance = [];
+    // int nummarkers = 0;
+    // List<LatLng> latlngmarker = [];
+    List<LatLng> destiLoc = [];
+
+
+    response = await rootBundle.loadString('assets/daftar.json');
+    data = await json.decode(response!.toString());
+    double dummy;
+    LatLng dummy2;
+
+    final Uint8List iconMarker2 = await getBytesFromAsset('assets/marker-motorcycle.png', 75);
+    
+    for (var i=0; i<data['results'].length; i++) {
+      listDistance.add(
+        getDistance(LatLng(latt!.toDouble(),lonn!.toDouble()),
+          LatLng(data['results'][i]['lat'],
+          data['results'][i]['lon']))
+      );
+      destiLoc.add(LatLng(data['results'][i]['lat'], data['results'][i]['lon']));
+    }
+
+    for (var i = 0; i<listDistance.length; i++) {
+      debugPrint('i: ' + i.toString());
+      for (var j = listDistance.length-1; j>i; j--) {
+        if (listDistance[j] < listDistance[j-1]) { 
+          dummy = listDistance[j];
+          // listDistance.insert(j, listDistance[j-1]);
+          listDistance[j] = listDistance[j-1];
+          // listDistance.insert(j-1, dummy);
+          listDistance[j-1] = dummy;
+          // debugPrint('destiLoc: $j' + destiLoc.toString());
+          // debugPrint(LatLng(data['results'][j]['lat'], data['results'][j]['lon']).toString());
+          // destiLoc.insert(j-1,LatLng(data['results'][j]['lat'], data['results'][j]['lon']));
+          dummy2 = destiLoc[j]; 
+          destiLoc[j] = destiLoc[j-1];
+          // destiLoc[j] = destiLoc[j-1];
+          destiLoc[j-1] = dummy2;
+          // destiLoc.removeAt(j-1);
+        }
+      }
+    }
+
+    debugPrint('DESTILOC: ' + destiLoc.toString());
+    debugPrint('JUMLAH: ' + destiLoc.length.toString());
     debugPrint('LIST DISTANCE: ' + listDistance.toString());
 
-    for (var j=0; j<listDistance.length; j++) {
+    for (var k=0; k<=4; k++) {
+      _markers.add(
+        Marker(
+          markerId: MarkerId('aa' + k.toString()),
+          onTap: () {
+            markerOnTap(context, destiLoc[k].latitude, destiLoc[k].longitude, latt!.toDouble(), lonn!.toDouble());
+          },
+          icon: BitmapDescriptor.fromBytes(iconMarker2),
+          position: LatLng(destiLoc[k].latitude, destiLoc[k].longitude)
+        )
+      );
+    }
+
+    /* for (var j=0; j<listDistance.length; j++) {
       debugPrint('j: ' + j.toString());
-      if(listDistance[j] <= 500) { // jml maksimal marker yang semuanya <= 500 meter adalah sejumlah marker yang <= 500 meter
-        latlngmarker.insert(nummarkers,LatLng(data['results'][j]['lat'],data['results'][j]['lon']));
+      if(listDistance[j] <= 500) { 
+        // latlngmarker.insert(nummarkers,LatLng(data['results'][j]['lat'],data['results'][j]['lon']));
         _markers.add(
           Marker(
             markerId: MarkerId('aa' + j.toString()),
             onTap: () {
-              markerOnTap(context, latlngmarker[nummarkers].latitude, latlngmarker[nummarkers].longitude, latt!.toDouble(), lonn!.toDouble());
+              markerOnTap(context, data['results'][j]['lat'], data['results'][j]['lon'], latt!.toDouble(), lonn!.toDouble());
             },
             icon: BitmapDescriptor.fromBytes(iconMarker2),
-            position: LatLng(latlngmarker[nummarkers].latitude, latlngmarker[nummarkers].longitude),
+            position: LatLng(data['results'][j]['lat'], data['results'][j]['lon']),
           )
         );
 
@@ -293,7 +361,7 @@ class _ContentState extends State<Content> {
     } // end for j
 
     for (var k=0; k<listDistance.length; k++) {
-        latlngmarker[k] = LatLng(data['results'][k]['lat'],data['results'][k]['lon']);
+        // latlngmarker[k] = LatLng(data['results'][k]['lat'],data['results'][k]['lon']);
         if((nummarkers >= 5)) {
           break;
         }
@@ -303,17 +371,17 @@ class _ContentState extends State<Content> {
               Marker(
                 markerId: MarkerId('aa' + k.toString()),
                 onTap: () {
-                  markerOnTap(context, latlngmarker[k].latitude, latlngmarker[k].latitude, latt!.toDouble(), lonn!.toDouble());
+                  markerOnTap(context, data['results'][k]['lat'], data['results'][k]['lon'], latt!.toDouble(), lonn!.toDouble());
                 },
                 icon: BitmapDescriptor.fromBytes(iconMarker2),
-                position: LatLng(latlngmarker[k].latitude, latlngmarker[k].longitude),
+                position: LatLng(data['results'][k]['lat'], data['results'][k]['lon']),
               )
             );
           }      
         }
         debugPrint('LATLNGMARKER JAUH: ' + latlngmarker.toString());
       }
-
+    */
 
     return 'Sukses';
   }
