@@ -12,7 +12,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: const Text('Location')),
         body: HomePage()
       )
     );
@@ -30,29 +29,38 @@ class _HomePageState extends State<HomePage> {
   
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Container(
-            height: 400,
-          ),
-          FlatButton(
-            child: const Text("MULAI"),
-            onPressed: () async {
-              Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high).then((value) {
-                setState(() {
-                  latt = value.latitude;
-                  lonn = value.longitude;
-                });
-                debugPrint('LAT: ' + latt.toString());
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) => Content(curLat: latt, curLon: lonn)));
-              });
-              // --> Manggil class lainnya di sini
-            },
-          ),
-        ],
+    return Container(
+      constraints: const BoxConstraints.expand(),
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: const AssetImage('assets/images/compressor.jpeg'),
+          fit: BoxFit.cover,
+          colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.5), BlendMode.dstATop)
+        )
       ),
+      child: Stack(
+        children: [
+          Positioned(
+        left: 150,
+        bottom: 20,
+        child: ElevatedButton(
+          style: OutlinedButton.styleFrom(backgroundColor: Colors.orange),
+          child: const Text("MULAI"),
+          onPressed: () async {
+            Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high).then((value) {
+              setState(() {
+                latt = value.latitude;
+                lonn = value.longitude;
+              });
+              debugPrint('LAT: ' + latt.toString());
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) => Content(curLat: latt, curLon: lonn)));
+            });
+          }
+        ),
+      )
+
+        ],
+      )     
     );
   }
 }

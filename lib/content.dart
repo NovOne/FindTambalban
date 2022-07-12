@@ -60,11 +60,18 @@ class _ContentState extends State<Content> {
 
   @override
   void initState () {
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [SystemUiOverlay.bottom]); // Untuk menghilangkan status bar/notification bar
     markerIcon(); // Add marker for only current location
     getLocation();
     // getMarker();
     
     super.initState();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: SystemUiOverlay.values); // untuk menjadikan normal kembali tampilannya
   }
 
   shareLocation(BuildContext context, double lat, double lon) async {
@@ -503,7 +510,8 @@ class _ContentState extends State<Content> {
               )           
             ),
             OutlinedButton(
-              child: Text("SEGARKAN LOKASI" + j.toString()),
+              style: OutlinedButton.styleFrom(primary: Colors.orange, side: const BorderSide(color: Colors.orange)),
+              child: const Text("SEGARKAN LOKASI"),
               onPressed: () async {
                 Uint8List iconMarker = await getBytesFromAsset('assets/motorcycle-icon.png', 75);
 
