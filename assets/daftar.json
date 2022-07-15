@@ -250,6 +250,26 @@
          "lat" : -6.141369,
          "lon" : 106.774484,
          "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.154539,
+         "lon" : 106.729892,
+         "area": "Jakarta Barat - Jam Terbatas"
+      },
+      {
+         "lat" : -6.153771,
+         "lon" : 106.717014,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.139816,
+         "lon" : 106.739243,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.161577,
+         "lon" : 106.682135,
+         "area": "Kota Tanggerang"
       }
    ]
 }    
