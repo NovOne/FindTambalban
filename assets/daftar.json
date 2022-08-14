@@ -345,6 +345,36 @@
          "lat" : -6.197927,
          "lon" : 106.764027,
          "area": "Jakarta Barat - TA"
+      },
+      {
+         "lat" : -6.155585,
+         "lon" : 106.731007,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.160361,
+         "lon" : 106.762959,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.148958,
+         "lon" : 106.732087,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.147860,
+         "lon" : 106.732316,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.154540,
+         "lon" : 106.731022,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.163168,
+         "lon" : 106.765978,
+         "area": "Jakarta Barat"
       }
    ]
 }    
