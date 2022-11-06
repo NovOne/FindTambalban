@@ -580,6 +580,36 @@
          "lat" : -6.198356,
          "lon" : 106.768320,
          "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.152804,
+         "lon" : 106.731227,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.152211,
+         "lon" : 106.748174,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.142275,
+         "lon" : 106.735714,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.186930,
+         "lon" : 106.724612,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.191710,
+         "lon" : 106.724135,
+         "area": "Batas Jakarta Barat - Tangerang"
+      },
+      {
+         "lat" : -6.136951,
+         "lon" : 106.738632,
+         "area": "Jakarta Barat"
       }
    ]
 }
