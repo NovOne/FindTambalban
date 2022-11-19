@@ -610,6 +610,71 @@
          "lat" : -6.136951,
          "lon" : 106.738632,
          "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.174952,
+         "lon" : 106.644207,
+         "area": "Kota Tanggerang - TA"
+      },
+      {
+         "lat" : -6.163224,
+         "lon" : 106.725924,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.163678,
+         "lon" : 106.725567,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.163593,
+         "lon" : 106.657272,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.145090,
+         "lon" : 106.729838,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.216882,
+         "lon" : 106.708725,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.217895,
+         "lon" : 106.707858,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.152111,
+         "lon" : 106.738504,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.232186,
+         "lon" : 106.701792,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.231843,
+         "lon" : 106.702070,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.155126,
+         "lon" : 106.747726,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.189577,
+         "lon" : 106.782703,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.189327,
+         "lon" : 106.782928,
+         "area": "Jakarta Barat"
       }
    ]
 }
