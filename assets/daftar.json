@@ -750,6 +750,61 @@
          "lat" : -6.165835,
          "lon" : 106.784829,
          "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.217806,
+         "lon" : 106.687640,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.199735,
+         "lon" : 106.697803,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.198438,
+         "lon" : 106.698973,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.197258,
+         "lon" : 106.699245,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.193900,
+         "lon" : 106.703434,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.200305,
+         "lon" : 106.690790,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.204347,
+         "lon" : 106.688016,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.206233,
+         "lon" : 106.687872,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.200356,
+         "lon" : 106.720259,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.204685,
+         "lon" : 106.715020,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.214601,
+         "lon" : 106.710299,
+         "area": "Kota Tanggerang"
       }
    ]
 }
