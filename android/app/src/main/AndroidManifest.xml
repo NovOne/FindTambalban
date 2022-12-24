@@ -8,8 +8,8 @@
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
      <application
-        android:label="tutorialflutter"
-        android:icon="@mipmap/ic_launcher">
+        android:label="Cari Tambal Ban"
+        android:icon="@mipmap/launcher_icon">
         <meta-data android:name="com.google.android.geo.API_KEY"
                android:value="AIzaSyBDu2cz8k1fuK7bqevcirzrPRvVpcfuiAY"/>
         <activity

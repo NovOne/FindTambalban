@@ -97,7 +97,6 @@ class _ContentState extends State<Content> {
           infoWindow: const InfoWindow(title:'Lokasi Saat Ini')
         )
       );
-    debugPrint('DI DALAM MARKER ICON');
     return 'OK aja lah';
   }
 
@@ -109,7 +108,6 @@ class _ContentState extends State<Content> {
   }
 
   Future<void> gotoDirection(String origin, String destination) async {
-      debugPrint('Masuk Go Direction');
       String strUrl = 'https://www.google.com/maps/dir/?api=1&origin=' + origin + '&destination=' + destination + '&travelmode=driving';
       await launchUrlString(strUrl, mode:LaunchMode.externalApplication);
   }
@@ -281,7 +279,7 @@ class _ContentState extends State<Content> {
       }
       // kode di sini
     }
-    debugPrint(datas);
+    // debugPrint(datas);
 
     return datas;
   }
@@ -310,7 +308,6 @@ class _ContentState extends State<Content> {
     }
 
     for (var i = 0; i<listDistance.length; i++) {
-      debugPrint('i: ' + i.toString());
       for (var j = listDistance.length-1; j>i; j--) {
         if (listDistance[j] < listDistance[j-1]) { 
           dummy = listDistance[j];
@@ -318,9 +315,6 @@ class _ContentState extends State<Content> {
           listDistance[j] = listDistance[j-1];
           // listDistance.insert(j-1, dummy);
           listDistance[j-1] = dummy;
-          // debugPrint('destiLoc: $j' + destiLoc.toString());
-          // debugPrint(LatLng(data['results'][j]['lat'], data['results'][j]['lon']).toString());
-          // destiLoc.insert(j-1,LatLng(data['results'][j]['lat'], data['results'][j]['lon']));
           dummy2 = destiLoc[j]; 
           destiLoc[j] = destiLoc[j-1];
           // destiLoc[j] = destiLoc[j-1];
@@ -330,9 +324,10 @@ class _ContentState extends State<Content> {
       }
     }
 
-    debugPrint('DESTILOC: ' + destiLoc.toString());
+    /* debugPrint('DESTILOC: ' + destiLoc.toString());
     debugPrint('JUMLAH: ' + destiLoc.length.toString());
     debugPrint('LIST DISTANCE: ' + listDistance.toString());
+    */
 
     for (var k=0; k<=4; k++) {
       _markers.add(
@@ -393,32 +388,6 @@ class _ContentState extends State<Content> {
     return 'Sukses';
   }
   /* Buat Marker Tambal Ban terdekat */
-  /* Future<String> getMarker() async {
-    //final String response = await rootBundle.loadString('assets/daftar.json');
-    //final data = await json.decode(response);
-    final Uint8List iconMarker2 = await getBytesFromAsset('assets/marker-motorcycle.png', 75);
-
-    debugPrint ("Data lat: " + data["results"][0]['lat'].toString());
-    debugPrint ("Data lon: " + data["results"][0]['lon'].toString());
-
-    for (var i=0; i<30; i++) {
-      // var nomarker = i + 1;
-      _markers.add(
-        Marker(
-          markerId: MarkerId('aa' + i.toString()),
-          onTap: () {
-            debugPrint('POSISI MARKER INI: ' + _markers[i].position.toString());
-            markerOnTap(context, data["results"][i]['lat'], data["results"][i]['lon'], latt!.toDouble(), lonn!.toDouble());
-          },
-          icon: BitmapDescriptor.fromBytes(iconMarker2),
-          position: LatLng(data["results"][i]['lat'], data["results"][i]['lon']),
-          // infoWindow: InfoWindow(title:'Marker ' + nomarker.toString())
-        )
-      );
-    }
-
-    return "Berhasil";
-  } */
   
   /* Future<Position> _getCurrentLocation() async {
     // var _currentPosition;
