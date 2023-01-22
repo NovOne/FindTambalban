@@ -915,6 +915,56 @@
          "lat" : -6.161666,
          "lon" : 106.726620,
          "area": ""
+      },
+      {
+         "lat" : -6.170977,
+         "lon" : 106.637724,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.229197,
+         "lon" : 106.721394,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.192829,
+         "lon" : 106.673454,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.197118,
+         "lon" : 106.678790,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.196896,
+         "lon" : 106.678408,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.187681,
+         "lon" : 106.662314,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.185424,
+         "lon" : 106.652266,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.157536,
+         "lon" : 106.766348,
+         "area": "Jakarta Barat - Portabel"
+      },
+      {
+         "lat" : -6.152344,
+         "lon" : 106.730632,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.226751,
+         "lon" : 106.704988,
+         "area": "Kota Tanggerang"
       }
    ]
 }
