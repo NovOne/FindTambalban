@@ -1005,6 +1005,56 @@
          "lat" : -6.169940,
          "lon" : 106.637640,
          "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.160936,
+         "lon" : 106.762915,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.155494,
+         "lon" : 106.747447,
+         "area": "Jakarta Barat - Jam Terbatas"
+      },
+      {
+         "lat" : -6.154940,
+         "lon" : 106.733140,
+         "area": "Jakarta Barat - Operasi Malam"
+      },
+      {
+         "lat" : -6.149547,
+         "lon" : 106.732066,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.146775,
+         "lon" : 106.732390,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.151555,
+         "lon" : 106.725018,
+         "area": "Jakarta Barat - Jam Terbatas"
+      },
+      {
+         "lat" : -6.165838,
+         "lon" : 106.650208,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.172475,
+         "lon" : 106.599642,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.167283,
+         "lon" : 106.641727,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.166562,
+         "lon" : 106.645957,
+         "area": "Kota Tanggerang"
       }
    ]
 }
