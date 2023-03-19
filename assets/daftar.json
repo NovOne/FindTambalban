@@ -1055,6 +1055,81 @@
          "lat" : -6.166562,
          "lon" : 106.645957,
          "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.222323,
+         "lon" : 106.702385,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.224274,
+         "lon" : 106.703238,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.222253,
+         "lon" : 106.695597,
+         "area": "Kota Tanggerang - Only Car"
+      },
+      {
+         "lat" : -6.222511,
+         "lon" : 106.692137,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.199022,
+         "lon" : 106.687023,
+         "area": "Kota Tanggerang - Operasi Terbatas"
+      },
+      {
+         "lat" : -6.222133,
+         "lon" : 106.689876,
+         "area": "Kota Tanggerang - Op. 24 Jam"
+      },
+      {
+         "lat" : -6.199237,
+         "lon" : 106.683042,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.190674,
+         "lon" : 106.668932,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.187248,
+         "lon" : 106.661380,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.235354,
+         "lon" : 106.702669,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.237454,
+         "lon" : 106.702948,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.215801,
+         "lon" : 106.709394,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.214784,
+         "lon" : 106.710305,
+         "area": "Kota Tanggerang"
+      },
+      {
+         "lat" : -6.186817,
+         "lon" : 106.725003,
+         "area": "Jakarta Barat"
+      },
+      {
+         "lat" : -6.221588,
+         "lon" : 106.721015,
+         "area": "Jakarta Barat"
       }
    ]
 }
