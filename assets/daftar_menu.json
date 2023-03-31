@@ -1,0 +1,28 @@
+{
+    "kelas": "X AK 2",
+    "nilai_pts": {    
+        "exist": true,
+        "active": true,
+        "thn_ajaran": "2022-2023",
+        "link": "https://www.google.com"
+    },
+    "nilai_pas": {
+        "exist": false,
+        "active": true,
+        "thn_ajaran": "2022-2023",
+        "link": "https://www.yahoo.com"
+    },
+    "antrian_bagi_rapor": {
+        "exist": true,
+        "active": true,
+        "link": "https://www.cires.com"
+    },
+    "pengumuman": {
+        "exist": false,
+        "content": ""
+    },
+    "pengumuman_popup": {
+        "exist": true,
+        "content": "Hari Rabu, 11 September 2022 sekolah diliburkan karena Hari Raya Waisak"
+    }
+}
