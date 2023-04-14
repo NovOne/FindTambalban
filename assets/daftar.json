@@ -1198,6 +1198,36 @@
          "lon" : 106.729628,
          "area": "Jakarta Barat",
          "tipe": ""
+      },
+      {
+         "lat" : -6.154760,
+         "lon" : 106.735585,
+         "area": "Jakarta Barat",
+         "tipe": "Portabel"
+      },
+      {
+         "lat" : -6.154772,
+         "lon" : 106.737432,
+         "area": "Jakarta Barat",
+         "tipe": ""
+      },
+      {
+         "lat" : -6.157025,
+         "lon" : 106.758068,
+         "area": "Jakarta Barat",
+         "tipe": ""
+      },
+      {
+         "lat" : -6.140990,
+         "lon" : 106.730039,
+         "area": "Jakarta Barat",
+         "tipe": ""
+      },
+      {
+         "lat" : -6.180088,
+         "lon" : 106.757250,
+         "area": "Jakarta Barat",
+         "tipe": ""
       }
    ]
 }
