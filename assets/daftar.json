@@ -1228,6 +1228,60 @@
          "lon" : 106.757250,
          "area": "Jakarta Barat",
          "tipe": ""
+      },
+      {
+         "lat" : -6.212498,
+         "lon" : 106.737741,
+         "area": "Jakarta Barat",
+         "tipe": ""
+      },
+      {
+         "lat" : -6.203912,
+         "lon" : 106.738472,
+         "area": "Jakarta Barat",
+         "tipe": ""
+      },
+      {
+         "lat" : -6.208465,
+         "lon" : 106.737917,
+         "area": "Jakarta Barat",
+         "tipe": ""
+      },
+      {
+         "lat" : -6.186937,
+         "lon" : 106.755425,
+         "area": "Jakarta Barat",
+         "tipe": ""
+      },
+      {
+         "lat" : -6.138294,
+         "lon" : 106.747374,
+         "area": "Jakarta Barat",
+         "tipe": ""
+      },
+      {
+         "lat" : -6.138290,
+         "lon" : 106.747365,
+         "area": "Jakarta Barat",
+         "tipe": ""
+      },
+      {
+         "lat" : -6.137014,
+         "lon" : 106.756258,
+         "area": "Jakarta Barat",
+         "tipe": ""
+      },
+      {
+         "lat" : -6.136663,
+         "lon" : 106.756392,
+         "area": "Jakarta Barat",
+         "tipe": ""
+      },
+      {
+         "lat" : -6.112324,
+         "lon" : 106.752042,
+         "area": "Jakarta Barat",
+         "tipe": "Portabel"
       }
    ]
 }
