@@ -1367,6 +1367,27 @@
          "area": "Jakarta Barat",
          "tipe": "",
          "time_op": ""
+      },
+      {
+         "lat" : -6.163729,
+         "lon" : 106.676875,
+         "area": "Kota Tanggerang",
+         "tipe": "",
+         "time_op":""
+      },
+      {
+         "lat" : -6.163179,
+         "lon" : 106.663524,
+         "area": "Kota Tanggerang",
+         "tipe": "",
+         "time_op":""
+      },
+      {
+         "lat" : -6.139734,
+         "lon" : 106.750708,
+         "area": "Jakarta Barat",
+         "tipe": "",
+         "time_op":""
       }
    ]
 }
