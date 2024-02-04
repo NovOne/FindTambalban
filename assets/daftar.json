@@ -1703,6 +1703,34 @@
          "area": "Jakarta Barat",
          "tipe": "",
          "time_op":""
+      },
+      {
+         "lat" : -6.181414,
+         "lon" : 106.757704,
+         "area": "Jakarta Barat",
+         "tipe": "",
+         "time_op":""
+      },
+      {
+         "lat" : -6.149543,
+         "lon" : 106.727352,
+         "area": "Jakarta Barat",
+         "tipe": "",
+         "time_op":""
+      },
+      {
+         "lat" : -6.186331,
+         "lon" : 106.724678,
+         "area": "Jakarta Barat",
+         "tipe": "",
+         "time_op":""
+      },
+      {
+         "lat" : -6.186511,
+         "lon" : 106.725602,
+         "area": "Jakarta Barat",
+         "tipe": "",
+         "time_op":""
       }
    ]
 }
