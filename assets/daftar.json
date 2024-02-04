@@ -1696,6 +1696,13 @@
          "area": "Jakarta Barat",
          "tipe": "",
          "time_op":""
+      },
+      {
+         "lat" : -6.174688,
+         "lon" : 106.759118,
+         "area": "Jakarta Barat",
+         "tipe": "",
+         "time_op":""
       }
    ]
 }
